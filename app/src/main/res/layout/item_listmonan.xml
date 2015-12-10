@@ -63,7 +63,7 @@
         android:orientation="vertical">
 
     <ImageButton
-
+        android:id="@+id/fload_button"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_centerHorizontal="true"

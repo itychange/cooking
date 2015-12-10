@@ -3,13 +3,12 @@ package adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -17,9 +16,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.itychange.cooking.AppController;
 import com.itychange.cooking.Chitietmonan;
-import com.itychange.cooking.List_monan;
 import com.itychange.cooking.R;
-import com.melnykov.fab.FloatingActionButton;
 
 import java.util.List;
 
@@ -67,7 +64,7 @@ public class adapter_listmonan extends BaseAdapter {
 
         TextView title= (TextView) convertView.findViewById(R.id.tenmonan);
         RatingBar ratingBar= (RatingBar) convertView.findViewById(R.id.rating_monan);
-        FloatingActionButton fab= (FloatingActionButton) convertView.findViewById(R.id.floa_button);
+        ImageButton fab= (ImageButton) convertView.findViewById(R.id.fload_button);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
