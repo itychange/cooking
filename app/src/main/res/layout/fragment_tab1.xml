@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.itychange.cooking.Tab1">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/progressbar"
+        android:background="#b1f5f4f4"
+        android:id="@+id/list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+</FrameLayout>
