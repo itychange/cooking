@@ -16,6 +16,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.itychange.cooking.AppController;
 import com.itychange.cooking.Chitietmonan;
+import com.itychange.cooking.Main2Activity;
 import com.itychange.cooking.R;
 
 import java.util.List;
@@ -68,7 +69,7 @@ public class adapter_listmonan extends BaseAdapter {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, Chitietmonan.class);
+                Intent intent = new Intent(mContext,Main2Activity.class);
                 intent.putExtra(Chitietmonan.intent_img, movieItems.get(position).getImg());
                 intent.putExtra(Chitietmonan.intent_url, movieItems.get(position).getUrl());
                 mContext.startActivity(intent);

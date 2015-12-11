@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name=".AppController"
         android:allowBackup="true"
@@ -34,7 +35,8 @@
             android:name=".Chitietmonan_01"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name=".List_diendan"
+        <activity
+            android:name=".List_diendan"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
@@ -45,8 +47,11 @@
             android:name=".List_gird"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name=".List_monan"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".List_monan"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".Main2Activity" >
         </activity>
     </application>
 

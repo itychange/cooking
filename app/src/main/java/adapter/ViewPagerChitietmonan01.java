@@ -69,7 +69,7 @@ public class ViewPagerChitietmonan01 extends PagerAdapter {
         TextView title;
         final ImageView img_bottomsheet;
         NetworkImageView imgload;
-        ImageView img;
+        final ImageView img;
         final TextView txt;
         final RelativeLayout mLinearLayout;
         inflater = (LayoutInflater) mContext
@@ -88,9 +88,9 @@ public class ViewPagerChitietmonan01 extends PagerAdapter {
             @Override
             public void onClick(View view) {
                 mLinearLayout.animate().setInterpolator(new AccelerateInterpolator())
-                        .setDuration(500)
+                        .setDuration(100)
                         .setStartDelay(200)
-                        .translationYBy(300)
+                        .translationYBy(200)
                         .setListener(new Animator.AnimatorListener() {
                             @Override
                             public void onAnimationStart(Animator animation) {
@@ -99,6 +99,7 @@ public class ViewPagerChitietmonan01 extends PagerAdapter {
 
                             @Override
                             public void onAnimationEnd(Animator animation) {
+                                img_bottomsheet.setVisibility(View.VISIBLE);
                             }
 
                             @Override
@@ -114,18 +115,17 @@ public class ViewPagerChitietmonan01 extends PagerAdapter {
             @Override
             public void onClick(View view) {
                 mLinearLayout.animate().setInterpolator(new AccelerateInterpolator())
-                        .setDuration(500)
+                        .setDuration(300)
                         .setStartDelay(200)
-                        .translationYBy(-300)
+                        .translationYBy(-200)
                         .setListener(new Animator.AnimatorListener() {
                             @Override
                             public void onAnimationStart(Animator animation) {
-                                img_bottomsheet.setVisibility(View.GONE);
+                                img.setVisibility(View.GONE);
                             }
 
                             @Override
                             public void onAnimationEnd(Animator animation) {
-                                img_bottomsheet.setVisibility(View.VISIBLE);
                             }
 
                             @Override

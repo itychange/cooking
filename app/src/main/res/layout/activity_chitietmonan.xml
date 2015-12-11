@@ -7,15 +7,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.itychange.cooking.Chitietmonan">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
-        style="@style/AppTheme.PopupOverlay"
-        android:theme="@style/AppTheme.PopupOverlay"
-        />
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/app_bar"/>
+
 
     <com.android.volley.toolbox.NetworkImageView
         android:layout_below="@+id/toolbar"

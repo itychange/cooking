@@ -5,15 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <android.support.v7.widget.Toolbar
+    <include
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
-        style="@style/AppTheme.PopupOverlay"
-        android:theme="@style/AppTheme.PopupOverlay"
-        />
+        layout="@layout/app_bar"/>
 
 
     <me.zhanghai.android.materialprogressbar.MaterialProgressBar
@@ -25,6 +19,7 @@
         app:mpb_progressStyle="horizontal"
         style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
         android:theme="@style/ThemeProgress"
+        android:padding="5dp"
         />
     <com.itychange.cooking.HorizontalListView
         android:id="@+id/horizantal_listview"
